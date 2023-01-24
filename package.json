@@ -1,0 +1,23 @@
+{
+  "name": "notes-oop-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChrisCodeX/Notes-OOP-JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChrisCodeX/Notes-OOP-JavaScript/issues"
+  },
+  "homepage": "https://github.com/ChrisCodeX/Notes-OOP-JavaScript#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
