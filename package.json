@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start:dev": "npx nodemon src/index.js"
+    "start:dev": "npx nodemon src/2-literal-object-prototypes"
   },
   "repository": {
     "type": "git",
