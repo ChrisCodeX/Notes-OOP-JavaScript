@@ -19,6 +19,7 @@
       this.name = name;
       this.age = age;
       this.learningPath = [];
+      this.cursosAprobados = [];
     }
   }
 })();
