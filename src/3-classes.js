@@ -7,4 +7,10 @@
     }
   }
 
+  // Instance
+  const webDevelopment = new LearningPath({
+    name: "Web Development",
+    courses: ["Curso 1", "Curso 2"],
+  });
+
 })();
