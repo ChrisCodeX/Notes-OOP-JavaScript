@@ -13,4 +13,9 @@
     courses: ["Curso 1", "Curso 2"],
   });
 
+  // Student Class
+  class Student {
+    constructor({ name, age }) {
+    }
+  }
 })();
