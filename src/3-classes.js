@@ -21,5 +21,13 @@
       this.learningPath = [];
       this.cursosAprobados = [];
     }
+
+    addNewCurse(newCurse) {
+      this.cursosAprobados.push(newCurse);
+    }
+
+    addLearningPath(newLearningPath) {
+      this.learningPath.push(newLearningPath);
+    }
   }
 })();
