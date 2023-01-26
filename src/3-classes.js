@@ -30,4 +30,14 @@
       this.learningPath.push(newLearningPath);
     }
   }
+
+  // Create an objet from class
+
+  const chris = new Student({
+    name: "Christian",
+    age: 25,
+  });
+
+  chris.addLearningPath(webDevelopment.name)
+  console.log("🟡 ~ file: 3-classes.js:17 ~ mike", chris);
 })();
