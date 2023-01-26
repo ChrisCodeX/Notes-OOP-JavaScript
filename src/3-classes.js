@@ -16,6 +16,7 @@
   // Student Class
   class Student {
     constructor({ name, age }) {
+      this.name = name;
     }
   }
 })();
