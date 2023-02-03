@@ -51,4 +51,14 @@ export class BasicStudent extends Student {
   constructor(props) {
     super(props);
   }
+
+  aproveCourse(newCourse) {
+    if (newCourse.lang === "english") {
+      console.warn(
+        `Sorry, ${this.name}, you only can take courses to your language`
+      );
+      return;
+    }
+    console.log("hehe xd");
+  }
 }
