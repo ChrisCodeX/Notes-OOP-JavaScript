@@ -72,3 +72,13 @@ export class ExpertStudent extends Student {
     this.approvedCourses.push(newCourse);
   }
 }
+
+const bs = new BasicStudent({
+  name: "Christian",
+  email: "asdf@asdf.com",
+  username: "chriscodex",
+});
+
+bs.aproveCourse({ lang: "english" });
+
+console.log(bs);
