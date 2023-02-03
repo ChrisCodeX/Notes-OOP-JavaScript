@@ -23,5 +23,9 @@ export class Student {
   addNewCurse(newCurse) {
     this.cursosAprobados.push(newCurse);
   }
+
+  addLearningPath(newLearningPath) {
+    this.learningPath.push(newLearningPath);
+  }
 }
 
