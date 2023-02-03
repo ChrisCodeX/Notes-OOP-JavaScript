@@ -45,3 +45,10 @@ export class FreeStudent extends Student {
     }
   }
 }
+
+// BasicStudent Class
+export class BasicStudent extends Student {
+  constructor(props) {
+    super(props);
+  }
+}
