@@ -29,3 +29,10 @@ export class Student {
   }
 }
 
+// FreeStudent Class
+export class FreeStudent extends Student {
+  constructor(props) {
+    super(props);
+  }
+}
+
