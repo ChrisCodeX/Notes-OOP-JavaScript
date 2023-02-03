@@ -19,5 +19,9 @@ export class Student {
     this.approvedCourses = approvedCourses;
     this.learningPaths = learningPaths;
   }
+
+  addNewCurse(newCurse) {
+    this.cursosAprobados.push(newCurse);
+  }
 }
 
