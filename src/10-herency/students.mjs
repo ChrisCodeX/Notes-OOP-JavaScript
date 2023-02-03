@@ -62,3 +62,9 @@ export class BasicStudent extends Student {
     console.log("hehe xd");
   }
 }
+
+export class ExpertStudent extends Student {
+  constructor(props) {
+    super(props);
+  }
+}
