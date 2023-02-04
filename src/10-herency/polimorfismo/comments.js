@@ -1,9 +1,5 @@
 class Comment {
-  constructor({
-    content,
-    studentName,
-    studentRole = 'estudiante',
-  }) {
+  constructor({ content, studentName, studentRole = 'estudiante' }) {
     this.content = content;
     this.studentName = studentName;
     this.studentRole = studentRole;
@@ -12,10 +8,11 @@ class Comment {
 
   publicar() {
     console.log(`${this.studentName} (${this.studentRole})`);
+
     console.log(`${this.likes} likes`);
   }
 }
 
 module.exports = {
-  Comment
-}
+  Comment,
+};
