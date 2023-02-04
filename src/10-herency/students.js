@@ -1,5 +1,7 @@
+const {Comment} = require('./polimorfismo/comments.js');
+
 // Student class
-export class Student {
+class Student {
   constructor({
     name,
     email,
@@ -27,10 +29,19 @@ export class Student {
   addLearningPath(newLearningPath) {
     this.learningPath.push(newLearningPath);
   }
+
+  publicarComentario(commentContent) {
+    const comment = new Comment({
+      content: commentContent,
+      studentName: this.name,
+    })
+
+    comment.publicar()
+  }
 }
 
 // FreeStudent Class
-export class FreeStudent extends Student {
+class FreeStudent extends Student {
   constructor(props) {
     super(props);
   }
@@ -47,23 +58,23 @@ export class FreeStudent extends Student {
 }
 
 // BasicStudent Class
-export class BasicStudent extends Student {
+class BasicStudent extends Student {
   constructor(props) {
     super(props);
   }
 
   aproveCourse(newCourse) {
-    if (newCourse.lang === "english") {
+    if (newCourse.lang === 'english') {
       console.warn(
         `Sorry, ${this.name}, you only can take courses to your language`
       );
       return;
     }
-    console.log("hehe xd");
+    console.log('hehe xd');
   }
 }
 
-export class ExpertStudent extends Student {
+class ExpertStudent extends Student {
   constructor(props) {
     super(props);
   }
@@ -73,12 +84,36 @@ export class ExpertStudent extends Student {
   }
 }
 
+class TeacherStudent extends Student {
+  constructor(props) {
+    super(props);
+  }
+
+  approveCourse(newCourse) {
+    this.approvedCourses.push(newCourse);
+  }
+
+  publicarComentario(commentContent) {
+    const comment = new Comment({
+      content: commentContent,
+      studentName: this.name,
+      studentRole: 'profesor'
+    })
+
+    comment.publicar()
+  }
+} 
+
 const bs = new BasicStudent({
-  name: "Christian",
-  email: "asdf@asdf.com",
-  username: "chriscodex",
+  name: 'Christian',
+  email: 'asdf@asdf.com',
+  username: 'chriscodex',
 });
 
-bs.aproveCourse({ lang: "english" });
-
-console.log(bs);
+module.exports = {
+  Student,
+  FreeStudent,
+  BasicStudent,
+  ExpertStudent,
+  TeacherStudent
+};

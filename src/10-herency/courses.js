@@ -1,4 +1,4 @@
-export class Course {
+class Course {
   constructor({ 
     name, 
     classes = [],
@@ -22,4 +22,8 @@ export class Course {
       this._name = nuevoNombrecito;
     }
   }
+}
+
+module.exports = {
+  Course
 }
