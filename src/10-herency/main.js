@@ -10,7 +10,7 @@ const cursoProgBasica = new Course({
 const cursoHTML = new Course({
   name: 'Curso practico de HTML y CSS',
   lang: 'english',
-  isFree: false
+  isFree: false,
 });
 
 // Students
@@ -28,10 +28,10 @@ const xodia = new TeacherStudent({
   twitter: 'xodiastone',
 });
 
-chris.approveCourse(cursoHTML)
+chris.approveCourse(cursoHTML);
 
-chris.publicarComentario('meh')
+chris.publicarComentario('meh');
 
-xodia.publicarComentario('en algo')
+xodia.publicarComentario('en algo');
 
 console.log('xd');
